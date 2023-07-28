@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  padding: 2px 50px;
+}
+.form-container {
+  margin: 20px;
+  width: 70%;
+}
+.form-container input {
+  padding: 8px;
+  border-radius: 5px;
+}
