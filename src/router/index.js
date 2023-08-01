@@ -4,12 +4,17 @@ import ByLetter from "../views/ByLetter.vue";
 import ByIngredient from "../views/ByIngredient.vue";
 import Meal from "../views/Meal.vue";
 import ByName from "../views/ByName.vue";
-import MealList from "../views/MealList.vue";
+import MealDetail from "../views/MealDetail";
 const routes = [
   {
     path: "/",
     name: "home",
     component: Home,
+  },
+  {
+    path: "/meal/:id",
+    name: "MealDetail",
+    component: MealDetail,
   },
 
   {
