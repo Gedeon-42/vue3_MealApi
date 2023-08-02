@@ -5,3 +5,9 @@ export function searchMeals({ commit }, keyword) {
     commit("setSearchedMeals", data.meals);
   });
 }
+
+export function searchIngredient({ commit }, ing) {
+  axiosClient.get(`filter.php?i=${ing}`).then(({ data }) => {
+    commit("setsearchedIngredeints", data.meals);
+  });
+}

@@ -1,10 +1,11 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
 import ByLetter from "../views/ByLetter.vue";
-import ByIngredient from "../views/ByIngredient.vue";
-import Meal from "../views/Meal.vue";
+import ByIngredient from "../views/IngredientItem.vue";
+import MealCategory from "../views/MealCategory.vue";
 import ByName from "../views/ByName.vue";
 import MealDetail from "../views/MealDetail";
+import Ingredient from "../views/Ingredient";
 const routes = [
   {
     path: "/",
@@ -23,15 +24,21 @@ const routes = [
     component: ByLetter,
   },
   {
-    path: "/byIngredient/:ingredient?",
+    path: "/ingredient",
+    name: "ingredient",
+    component: Ingredient,
+  },
+  {
+    path: "/Ingredient/:ingredient?",
     name: "byIngredient",
     component: ByIngredient,
   },
   {
-    path: "/meal",
-    name: "meal",
-    component: Meal,
+    path: "/category",
+    name: "category",
+    component: MealCategory,
   },
+
   {
     path: "/byname/:name?",
     name: "byname",

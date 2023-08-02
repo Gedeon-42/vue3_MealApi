@@ -105,3 +105,69 @@
   font-size: 18px;
   color: rgba(0, 0, 0, 0.8);
 }
+.category-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-row-gap: 14px;
+  grid-column-gap: 13px;
+  background: azure;
+}
+.category-content {
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  padding: 8px;
+  position: relative;
+}
+.category-content img {
+  width: 100%;
+  height: 200px;
+  border-radius: 7px;
+  margin: 12px 4px;
+  transition: 1s;
+}
+.category-content img:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+.category-link {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.categ-desc {
+  position: absolute;
+  bottom: 0;
+  left: 35%;
+  transition: 1s;
+  transform: translate(-20%);
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  opacity: 0;
+  padding: 7px;
+  border-radius: 7px;
+}
+.category-content:hover .categ-desc {
+  bottom: 50%;
+  background: black;
+  opacity: 1;
+}
+.mt-20 {
+  margin: 20px;
+}
+/* style for ingredient */
+
+.ingredient-wrapper {
+  padding: 20px 40px;
+}
+.ing-form {
+  padding-left: 30%;
+}
+.ing-form form input {
+  width: 40%;
+  padding: 10px;
+}
+.ing-form form button {
+  padding: 10px;
+  background: black;
+  color: white;
+}
