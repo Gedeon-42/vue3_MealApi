@@ -4,10 +4,9 @@
       <div class="logo"><h3>mealmaker</h3></div>
       <div class="links">
         <router-link to="/">home</router-link>
-        <router-link :to="{ name: 'byLetter' }">byletter</router-link>
+        <router-link :to="{ name: 'byname' }">byname</router-link>
         <router-link :to="{ name: 'category' }">categories</router-link>
         <router-link :to="{ name: 'ingredient' }">ingeredient</router-link>
-        <router-link :to="{ name: 'byname' }">byname</router-link>
       </div>
     </nav>
   </div>

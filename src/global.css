@@ -171,3 +171,18 @@
   background: black;
   color: white;
 }
+.ingredient-content {
+  margin: 20px 2px;
+}
+.ing-link {
+  text-decoration: none;
+}
+.ing-link h3 {
+  color: rgba(0, 0, 0, 0.8);
+}
+.ing-link p {
+  font-size: 18px;
+  line-height: 23px;
+  margin-top: 10px;
+  color: rgba(0, 0, 0, 0.8);
+}
